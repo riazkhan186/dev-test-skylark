@@ -64,6 +64,7 @@ a {
   text-decoration: none;
 }
 
+// default Button
 .default-button {
   padding: 15px 30px;
   line-height: 19.2px;
@@ -415,4 +416,70 @@ Transaction Area CSS
       height: 2px;
     }
   }
+}
+
+/*=========================
+Newsletter Area CSS
+==========================*/
+.newsletter {
+  margin-top: 60px;
+  background-color: #7C7068;
+  .newsletter-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.newsletter-text-area {
+  width: 650px;
+  margin-left: auto;
+  padding: {
+    top: 220px;
+    bottom: 220px;
+  };
+  h3 {
+    color: var(--whiteColor);
+    position: relative;
+    padding-bottom: 25px;
+    font: {
+      size: 32px;
+      weight: 400;
+      family: var(--primaryFont)
+    };
+    &::before {
+      content: '';
+      width: 175px;
+      height: 1px;
+      background-color: #C2A5F9;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  p {
+    color: var(--whiteColor);
+    margin-top: 25px;
+  }
+  .button-group {
+    .default-button {
+      margin-top: 15px;
+      margin-right: 20px;
+    }
+  }
+  .newsletter-content-text {
+    max-width: 560px;
+  }
+}
+
+.newsletter-image {
+  img {
+    width: 100%;
+    display: none;
+  }
+  background: {
+    image: url('../images/newsletter.jpg');
+    size: cover;
+    position: left center;
+    repeat: no-repeat;
+  };
 }
