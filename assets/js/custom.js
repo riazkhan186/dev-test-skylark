@@ -20,7 +20,10 @@
   $(".banner-content").owlCarousel({
     items: 1,
     nav: true,
-    navText: ['<iconify-icon icon="ic:round-arrow-back"></iconify-icon>','<iconify-icon icon="ic:round-arrow-forward"></iconify-icon>'],
+    navText: [
+      '<iconify-icon icon="ic:round-arrow-back"></iconify-icon>',
+      '<iconify-icon icon="ic:round-arrow-forward"></iconify-icon>',
+    ],
     dots: false,
     loop: true,
     autoplay: true,
@@ -38,6 +41,33 @@
     w = 100 / l;
   });
 
-  $(".owl-thumbs button").width((w-2)+"%");
+  $(".owl-thumbs button").width(w - 2 + "%");
 
+  // Transactions Slider area
+  $(".transaction-slider").owlCarousel({
+    nav: true,
+    margin: 30,
+    navText: [
+      '<iconify-icon icon="ph:arrow-left-bold"></iconify-icon>',
+      '<iconify-icon icon="ph:arrow-right-bold"></iconify-icon>',
+    ],
+    dots: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    thumbs: false,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 0,
+      },
+      480: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+    },
+  });
 })(jQuery);
