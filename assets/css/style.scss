@@ -483,3 +483,50 @@ Newsletter Area CSS
     repeat: no-repeat;
   };
 }
+
+/*=========================
+Quick Links Area CSS
+==========================*/
+.quicklinks {
+  background-color: #C2A5F9;
+  margin-top: 60px;
+}
+
+.quicklinks-content {
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  };
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      a {
+        color: var(--whiteColor);
+        font: {
+          size: 11px;
+          weight: 700;
+          family: var(--primaryFont);
+        };
+      }
+    }
+
+  }
+  .default-button {
+    display: inline-block;
+    font-size: 11px;
+  }
+}
+
+/*=========================
+Footer Area CSS
+==========================*/
+.footer-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
