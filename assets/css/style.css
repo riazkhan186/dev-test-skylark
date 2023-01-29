@@ -463,7 +463,51 @@ Quick Links Area CSS
 /*=========================
 Footer Area CSS
 ==========================*/
+footer {
+  background-color: #9E78E8;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 .footer-content {
   display: grid;
   grid-template-columns: 60% 40%;
+}
+
+.footer-left-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-left-area ul li {
+  display: inline-block;
+  color: var(--whiteColor);
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 11px;
+  font-weight: 400;
+  font-family: var(--primaryFont);
+}
+.footer-left-area ul li a {
+  color: var(--whiteColor);
+}
+.footer-left-area ul li:first-child {
+  margin-left: 0;
+}
+.footer-left-area ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-right-area a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: var(--whiteColor);
+  font-size: 11px;
+  font-weight: 500;
+  font-family: var(--primaryFont);
+}
+.footer-right-area a iconify-icon {
+  font-size: 16px;
+  margin-right: 12px;
 }/*# sourceMappingURL=style.css.map */
