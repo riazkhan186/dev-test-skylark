@@ -22,6 +22,7 @@
     $('#default_nav').toggle();
   })
 
+  // Toggling menu List in second nev
   $('#menuToggleButton').on('click', function () {
     $('.s_menu').toggle();
   })
