@@ -16,6 +16,16 @@
     }
   });
 
+  // Navbar Toogle 
+  $('#toogle_nav').on('click', function () {
+    $('#second_nav').toggle();
+    $('#default_nav').toggle();
+  })
+
+  $('#menuToggleButton').on('click', function () {
+    $('.s_menu').toggle();
+  })
+
   // Banner Slider
   $(".banner-content").owlCarousel({
     items: 1,

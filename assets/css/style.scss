@@ -64,6 +64,27 @@ a {
   text-decoration: none;
 }
 
+// Toggle Nav
+.switch-nav {
+  position: fixed;
+  top: 50%;
+  right: -27px;
+  transform: translateY(-50%) rotate(-90deg);
+  z-index: 9999;
+  button {
+    border-radius: 5px 5px 0 0px;
+    background-color: #000000;
+    color: var(--whiteColor);
+    padding: 3px 10px;
+    cursor: pointer;
+    font: {
+      size: 11px;
+      weight: 500;
+      family: var(--primaryFont)
+    };
+  }
+}
+
 // default Button
 .default-button {
   padding: 15px 30px;
@@ -82,7 +103,7 @@ a {
 /*=========================
 Header Area CSS
 ==========================*/
-header {
+#default_nav {
   position: relative;
   padding-top: 30px;
   z-index: 1;
@@ -118,6 +139,96 @@ header {
         .navLink {
           padding-right: 0;
         }
+      }
+    }
+  }
+}
+
+#second_nav {
+  display: none;
+}
+
+#second_nav {
+  .secondNav {
+    position: relative;
+    z-index: 9;
+    background-color: #C2A5F9;
+    .secondNav-logo{
+      text-align: center;
+      padding: {
+        top: 50px;
+        bottom: 50px;
+      };
+    }
+    #menuToggleButton {
+      border: 0;
+      padding: 0;
+      right: 20px;
+      line-height: 1;
+      cursor: pointer;
+      font-size: 28px;
+      color: var(--whiteColor);
+      background-color: transparent;
+      position: absolute;
+      top: 47px;
+    }
+
+    .s_menu {
+      background-color: #9E78E8;
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      .s-menu-list-area {
+        display: grid;
+        padding: 0px 15px;
+        grid-template-columns: 32% 32% 32%;
+        ul {
+          margin: 0;
+          padding: 50px 0px;
+          list-style: none;
+          border-right: 1px solid #ffffff20;
+          li {
+            a {
+              width: 100%;
+              display: flex;
+              max-width: 300px;
+              align-items: center;
+              color: var(--whiteColor);
+              justify-content: space-between;
+              padding: {
+                top: 8px;
+                bottom: 8px;
+              };
+              font: {
+                size: 16px;
+                weight: 500;
+                family: var(--primaryFont)
+              };
+              margin: {
+                left: auto;
+                right: auto;
+              };
+              iconify-icon {
+                font-size: 20px;
+              }
+            }
+            &:first-child{
+              a {
+                padding-top: 0;
+              }
+            }
+            &:last-child{
+              a {
+                padding-bottom: 0;
+              }
+            }
+          }
+        }
+        .last-list {
+          border: none;
+        }        
       }
     }
   }
